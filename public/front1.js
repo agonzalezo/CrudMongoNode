@@ -4,7 +4,7 @@ console.log("Empieza la busqueda");
 function buscar(){
 let color = document.getElementById("txtcolor").value;
 console.log("El color a buscar es="+color)
-let get_url = ("/cars/list/" + color);
+let get_url = ("/cars/search/" + color);
 window.location=get_url;    
 // window.alert("Termino");
 }
