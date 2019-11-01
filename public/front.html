@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/front.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empresa De Carros</title>
+</head>
+<body>
+    <h1>Bienvenido A la empresa de carros.</h1>
+    <h3>Vas a pdoer crear editar y borrar carros.</h3>
+    <p>vamos a utilizar diferentes metodos.</p>
+    
+    <form action="/api/carslist" method="get">
+    <p>Para ver la lista de carros operime el boton.
+    <input type="submit" value="Listar">
+    </p>
+    </form>
+    <hr>
+    <p>Para buscar carro ingresa un color en ingles.
+        <!-- <form action="/api/search/" method="get"> -->
+        <!-- <form> -->
+        <input type="text" name="color" id="txtcolor">
+        <!-- <input type="submit" value="Buscar" onclick="buscar()"> -->
+        <input type="submit" value="Buscar" onclick="buscar()">
+        <!-- </form> -->
+    </p>
+    <hr>
+    <form action="/api/addcar" method="post">
+        <p>Para agregar un carro llena el formulario</p>
+        <p>
+            Marca <input type="text" name="marca" id="txtmarca"><br><br>
+            Modelo <input type="text" name="modelo" id="txtmodel"><br><br>
+            año <input type="text" name="ano" id="txtano"><br><br>
+            color <input type="text" name="color2" id="txtcolor2">
+            <input type="button" value="Enviar" onclick="agregar()">
+        </p>
+    </form>
+    <script src="/front1.js"></script>
+</body>
+</html>
