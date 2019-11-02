@@ -1,6 +1,6 @@
 const express = require("express"),
     router = express.Router(),
-    config_json = require("../externalconfig")();
+    config_json = require("../config/externalconfig")();
 
 let motos = [
     {id:0, cc:100, model:2019},

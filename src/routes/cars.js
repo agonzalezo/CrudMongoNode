@@ -1,6 +1,6 @@
 const express = require("express"),
     router = express.Router(),
-    config_json = require('../externalconfig.js')();//metodo externo
+    config_json = require('../config/externalconfig')();//metodo externo
 //Data
 let cars = [
     { id: 0, brand: "bmw", model: "320", year: "2019", color: "red" },
