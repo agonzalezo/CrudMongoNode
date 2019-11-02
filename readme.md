@@ -1,3 +1,2 @@
-este modulo requiere
-
-npm i morgan express fs os serve-favicon
+este modulo requiere: 
+npm i morgan express fs os serve-favicon ejs 
