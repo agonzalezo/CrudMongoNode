@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/myfront.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Empresa De Carros</title>
-</head>
-<body>
+<% include partials/_head %>
+
     <h1>Bienvenido A la empresa de carros.</h1>
     <h3>Vas a pdoer crear editar y borrar carros.</h3>
-    <p>vamos a utilizar diferentes metodos.</p>
     
     <form action="/cars/list" method="get">
     <p>Para ver la lista de carros operime el boton.
@@ -38,5 +29,4 @@
         </p>
     </form>
     <script src="/myfront.js"></script>
-</body>
-</html>
+    <% include partials/_footer %>
